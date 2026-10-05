@@ -45,10 +45,11 @@ export default {
   },
   async run({ $ }) {
     if (this.slug) {
-      const company = await this.app.getCompany({
+      const response = await this.app.getCompany({
         $,
         slug: this.slug.trim(),
       });
+      const company = response?.data ?? response;
       $.export("$summary", `Retrieved company "${company?.name || this.slug}"`);
       return company;
     }

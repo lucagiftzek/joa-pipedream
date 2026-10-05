@@ -317,7 +317,7 @@ test("get-job, find-company and error mapping", async () => {
       error: "invalid_key",
       message: "That key is not valid, or is no longer active.",
     });
-  await assert.rejects(makeApp("bad").getMe(), /rejected the API key \(401\).*signup/);
+  await assert.rejects(makeApp("bad").getMe(), /rejected the API key \(401\).*register/);
   nock(API).get("/v1/jobs/gone")
     .reply(429, {
       error: "rate_limited",

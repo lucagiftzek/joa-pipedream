@@ -1,6 +1,6 @@
 export const BASE_URL = "https://api.jobopportunitiesapi.org";
 export const DOCS_URL = "https://jobopportunitiesapi.org/docs";
-export const SIGNUP_URL = "https://jobopportunitiesapi.org/signup";
+export const REGISTER_URL = "https://jobopportunitiesapi.org/register";
 export const DEFAULT_MAX_PAGE_SIZE = 200;
 
 export const REMOTE_OPTIONS = [

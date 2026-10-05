@@ -7,7 +7,7 @@ or absent, and closures are tracked, so workflows can react when a role opens, c
 - Website: https://jobopportunitiesapi.org
 - Coverage (live figures): https://jobopportunitiesapi.org/coverage
 - API docs: https://jobopportunitiesapi.org/docs
-- Free API key (no card required): https://jobopportunitiesapi.org/signup
+- Free API key (no card required): https://jobopportunitiesapi.org/register
 
 ## Components
 
@@ -24,7 +24,7 @@ Authentication: the app uses a single `api_key` field sent as `Authorization: Be
 connection test. Page sizes are clamped to the key's `limits.max_page_size` (read from `/v1/me`, cached for a day in
 sources). Every returned row counts against the plan's record allowance, so the defaults are deliberately small.
 
-Errors are translated: 401 (bad key, with the signup link), 402 (record allowance used up), 403 (plan does not
+Errors are translated: 401 (bad key, with the registration link), 402 (record allowance used up), 403 (plan does not
 include the endpoint — closed-job and change feeds need Growth+), 404, 410 (listing withdrawn by the employer),
 400/422 (the API's own parameter message) and 429 (rate limit, with `Retry-After`).
 

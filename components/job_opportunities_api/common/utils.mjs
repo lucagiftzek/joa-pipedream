@@ -1,5 +1,5 @@
 import { ConfigurationError } from "@pipedream/platform";
-import { SIGNUP_URL } from "./constants.mjs";
+import { REGISTER_URL } from "./constants.mjs";
 
 /**
  * Turn a string, an array of strings or a comma list into the comma list the API expects.
@@ -59,7 +59,7 @@ export function joaErrorMessage(err) {
     : "";
   switch (status) {
   case 401:
-    return `Job Opportunities API (JOA) rejected the API key (401). Check the key in your connected account; a free key (no card required) is available at ${SIGNUP_URL}.${suffix}`;
+    return `Job Opportunities API (JOA) rejected the API key (401). Check the key in your connected account; a free key (no card required) is available at ${REGISTER_URL}.${suffix}`;
   case 402:
     return `Your Job Opportunities API (JOA) plan has used up its record allowance for this period (402).${suffix}`;
   case 403:

@@ -1,0 +1,17 @@
+{
+  "name": "joa-pipedream-components-dev",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Development harness for the Job Opportunities API (JOA) Pipedream components",
+  "type": "module",
+  "license": "MIT",
+  "author": "Loukas Tzekos <support@jobopportunitiesapi.org>",
+  "scripts": {
+    "test": "node --test test/components.test.mjs",
+    "test:live": "node --test test/live.test.mjs"
+  },
+  "devDependencies": {
+    "@pipedream/platform": "^3.4.0",
+    "nock": "^14.0.17"
+  }
+}

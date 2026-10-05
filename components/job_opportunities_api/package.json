@@ -1,0 +1,20 @@
+{
+  "name": "@pipedream/job_opportunities_api",
+  "version": "0.1.0",
+  "description": "Pipedream Job Opportunities API (JOA) Components",
+  "main": "job_opportunities_api.app.mjs",
+  "keywords": [
+    "pipedream",
+    "job_opportunities_api",
+    "jobs",
+    "job postings"
+  ],
+  "homepage": "https://pipedream.com/apps/job_opportunities_api",
+  "author": "Pipedream <support@pipedream.com> (https://pipedream.com/)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@pipedream/platform": "^3.4.0"
+  }
+}

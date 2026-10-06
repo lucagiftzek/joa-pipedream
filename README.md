@@ -60,6 +60,10 @@ real component code; HTTP goes through `@pipedream/platform`'s axios.
 
 See [PUBLISHING.md](PUBLISHING.md). Nothing has been published.
 
+## Showing listings publicly
+
+If you display the listings publicly, the Job Opportunities API terms ask for a visible credit, "Data: Job Opportunities API", linking to https://jobopportunitiesapi.org.
+
 ## Licence
 
 MIT — see [LICENSE](LICENSE). Maintainer: Loukas Tzekos <support@jobopportunitiesapi.org>.
